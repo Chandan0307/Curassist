@@ -1,0 +1,39 @@
+
+
+.contact-div{
+    margin-top: 2rem;
+    width: 80rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.contact-img{
+width: 100%;
+
+
+}
+.navbar-nav{
+    display: flex;
+}
+.card{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #83c5be;
+    height: 90vh;
+
+}
+.home1-img{
+    border-radius: 9px;
+    box-shadow: 0 0 2.2rem rgb(151, 145, 145);
+}
+.card-title{
+    font-size: 9.4rem;
+    letter-spacing: -3px;
+    line-height: 1;
+    color: white;
+  
+
+}

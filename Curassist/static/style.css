@@ -1,0 +1,453 @@
+/*
+  01 tpopgraphy
+  07 white space
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      font weight:
+      line height
+      dfault line heght:1
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    -----02 colors
+    Brand color: #e67e22
+    tints:#fdf2e9
+    shades:
+    accounts:
+    greys:
+    #555
+    ....05 shadow
+    ...6 border radius
+      */
+     
+      *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+       box-sizing: border-box;
+    
+    }
+    body{
+        font-size: 62.5%;
+     
+       
+    }.container {
+      /* 1140px */
+      max-width: 120rem;
+      padding: 0 3.2rem;
+      margin: 0 auto;
+    }
+    /* ..............................navbar.................. */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5rem;
+      background-color: #B4CEFF;
+      padding: 1rem;
+      margin-bottom: 1.8rem;
+    }
+    .nav-img{
+      width: 9.4rem;
+      border-radius:4px;
+    }
+    .nav-item{
+      display: flex;
+      gap: 1.2rem;
+      color: #fff;
+    
+    }
+    .nav-items{
+    list-style: none;
+    font-size: 1.8rem ;
+    text-transform: capitalize;
+    
+    }
+    
+    /* ........................header........................ */
+    .btn,
+    .btn:link,
+    .btn:visited {
+      display: inline-block;
+    
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+    
+      /* Only necessary for .btn */
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    
+      /* Put transition on original "state" */
+      /* transition: background-color 0.3s; */
+      transition: all 0.3s;
+    }
+    
+    .btn--full:link,
+    .btn--full:visited {
+      background-color: #e67e22;
+      color: #fff;
+    }
+    
+    .btn--full:hover,
+    .btn--full:active {
+      background-color: #f18e15;
+    }
+    
+    .btn--outline:link,
+    .btn--outline:visited {
+      background-color: #fff;
+      color: #555;
+    }
+    
+    .btn--outline:hover,
+    .btn--outline:active {
+      background-color: #fdf2e9;
+    
+      /* border: 3px solid #fff; */
+    
+      /* Trick to add border inside */
+      box-shadow: inset 0 0 0 3px #fff;
+    }
+    .hero{
+      height: 90vh;
+      display: grid;
+     grid-template-columns: 45fr 45fr;
+      align-items: center;
+      margin: 1rem;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 0 1rem #73B9F4;
+      background-color: #fff;
+      margin-bottom: 9.6rem;
+    }
+    .hero-texts{
+      text-align: center;
+      background-color: #fff;
+      padding: 1.2rem;
+      
+    }
+    .hero-title{
+      font-size: 8.4rem;
+      color: #8585FF;
+      letter-spacing: -7px;
+    
+    }
+    .hero-text{
+      color:#73B9F4;
+      font-size: 2.8rem;
+      text-transform: capitalize;
+     
+      letter-spacing: 0.75px;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>about curassist>>>>>>>>> */
+    .about-title{
+      font-size: 3rem;
+      color: #D3493F;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    /* .............................how it works................. */
+    .section-how {
+      
+      margin-top: 9.6rem;
+      margin-bottom: 9.6rem;
+    }
+    .work-title{
+    
+      font-size: 3rem;
+      color: #8585FF;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+     
+    
+    }
+    .step-title{
+      font-size: 2.6rem;
+      text-transform: capitalize;
+      margin-bottom: 3.2rem;
+      color: #73B9F4;
+      letter-spacing: -1px;
+    }
+    .step-container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .step-number {
+      font-size: 8.6rem;
+      font-weight: 600;
+      color: #ddd;
+      margin-bottom: 1.2rem;
+    }
+    
+    .step-description {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      letter-spacing: 0.80px;
+      color: #463f3a;
+    }
+    
+    .step-img-box {
+      position: relative;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .step-img-box::before,
+    .step-img-box::after {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .step-img-box::before {
+      width: 60%;
+      /* height: 60%; */
+    
+      /* 60% of parent's width */
+      padding-bottom: 60%;
+    
+      background-color: #edf1f7;
+      z-index: -2;
+    }
+    
+    .step-img-box::after {
+      width: 45%;
+      padding-bottom: 45%;
+      background-color: #dce5f5;
+      z-index: -1;
+    }
+    
+    .step-img {
+      width: 45%;
+      height: 45%;
+      border-radius: 9px;
+      /* z-index: 10; */
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>solution>>>>>>>>>>>>>>>>>>>>>>>> */
+    .solution{
+      margin-top: 9.6rem;
+    }
+    .solution-container
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 3rem;
+      align-items: center;
+    
+    }
+    .sol{
+      align-self: center;
+      text-align: center;
+    }
+    .solution-title{
+      font-size: 2.6rem;
+      text-transform: capitalize;
+      margin-bottom: 3.2rem;
+      color: #e67e22;
+      letter-spacing: -1px;
+     
+    }
+    .solution-img
+    {
+     font-size: 3.2rem;
+     color: #fff;
+      background-color: #B4CEFF;
+      padding: 1rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    
+    }
+    .solution-heading{
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      color: #D3493F;
+      margin-bottom:0.8rem;
+    
+    }
+    .solution-text{
+      font-size: 1.2rem;
+      line-height:1.1;
+      letter-spacing: 0.75px;
+      color: #463f3a;
+    
+    }
+    /* ...........................cta............. */
+    .callToAction{
+      margin-top: 9.6rem;
+      display: flex;
+      gap: 9rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #B4CEFF;
+    padding: 0 5rem;
+    border-radius: 9px;
+    overflow: hidden;
+    }
+    .s1{
+      margin-bottom: 3.5rem;
+    }
+    .cta-form{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      column-gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .cta-title{
+      font-size: 2.4rem;
+      text-transform: capitalize;
+      color:#fff;
+      margin-bottom: 1rem;
+    
+    }
+    .cta-text-box{
+      padding-left:5rem;
+      text-align: center;
+    }
+    .cta-text{
+      font-size: 1.2rem;
+     letter-spacing: 0.95px;
+     color: #463f3a;
+     line-height: 1.1;
+     margin-bottom: 3rem;
+     
+    }
+    label{
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 0.8rem;
+    
+    }
+    input{
+      width: 18rem;
+      height: 3rem;
+      border-radius: 9px;
+      border: none;
+      padding: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #463f3a;
+    
+    }
+    select{
+      width: 18rem;
+      height: 3rem;
+      border-radius: 9px;
+      border: none;
+      color: #463f3a;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    button{
+      width: 8rem;
+      height: 2rem;
+      border-radius: 9px;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      background-color: #f18e15;
+    
+    }
+    .cta-img{
+      width: 100%;
+      height: 100%;
+    
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>about us>>>>>>>>>> */
+    .about-us{
+      text-align: center;
+      margin-top: 9.6rem;
+      margin-bottom: 9.6rem;
+    }
+    .about-us-title{
+      font-size: 3rem;
+      color: #6bb7a3;
+      font-weight: 700;
+     
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    
+    
+    }
+    .about-us-texts{
+      font-size: 1.5rem;
+      color: #463f3ac7;
+      letter-spacing: 0.90px;
+      line-height: 1.9;
+      margin-bottom: 2rem;
+    }
+    .about-us-gallery{
+      display: flex;
+    gap: 1.2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-img{
+      height: 5.8rem;
+      width: 4.8rem;
+      border-radius: 50%;
+      /* margin-right: -1.6rem; */
+      border: 3px solid #fdf2e9;
+    
+    }
+    /* .......................footer..................... */
+    .footer{
+      margin-top: 9.6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    }
+    .foot{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items:center;
+      background-color: #B4CEFF;
+      padding: 1rem;
+    }
+    .foot-img{
+      width: 10.4rem;
+      border-radius:4px;
+      margin-bottom: 1rem;
+    }
+    .foot-logo{
+      font-size: 2rem;
+      color: #fff;
+      margin-right: 2rem;
+      
+    }
+    .foot-sec-1{
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: #463f3a;
+    }
+    .foot-logos{
+      margin-bottom: 2rem;
+    }
+    .foot-2{
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #463f3a;
+    }
+    .foot-heading{
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: #fff;
+    }

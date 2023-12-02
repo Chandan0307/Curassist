@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<nav class="nav">
+    {% comment %} <img src="./images/new-logo.png" class="nav-img"/> {% endcomment %}
+    <img src="./static/images/new-logo.png" class="nav-img"/>
+    <ul class="nav-item">
+    
+       <li class="nav-items">About-Curassist</li>
+       <li class="nav-items">How it Works</li>
+       <li class="nav-items">About-Us</li>
+       <li class="nav-items">
+        <a href=" {% url 'contact'%}" class="btn btn--full margin-right-sm">Contact Us</a></li>
+       
+    </ul>
+
+</nav>
+    <header class="hero container">
+        
+        <div class="hero-texts">
+           <h1 class="hero-title">Curassist</h1>
+          <p class="hero-text">One stop destination for all your medical records</p>
+          <a href=" {% url 'login_attempt'%}" class="btn btn--full margin-right-sm">Log In</a>
+            
+            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+        </div>
+        <img src="./static/images/heros.jpg" alt="">
+    </header>
+    <section class="about-me container">
+        <h1 class="about-title">ABOUT CURASSIST</h1>
+        <video width="100%" controls>
+            <source src="./static/images/VE Project 2.mp4" type="video/mp4">
+            
+         
+          </video>
+    </section>
+<section class="section-how">
+    <h1 class="work-title">How it works</h1>
+    <div class="container">
+        <!-- STEP 01 -->
+        <div class="step-container">
+        <div class="step-text-box">
+          <p class="step-number">01</p>
+          <h3 class="step-title">
+            Sign up
+          </h3>
+          <p class="step-description">
+            Customer will get their personal id and from that time they can access and store anything from our website as they want.
+          </p>
+        </div>
+        <div class="step-img-box">
+        <img src="./static/images/login.jpg"   class="step-img"/>
+        </div>
+    </div>
+        <!-- STEP 02 -->
+        <div class="step-container">
+        <div class="step-img-box">
+          <img src="./static/images/step2.jpg"   class="step-img" />
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">02</p>
+          <h3 class="step-title">Upload</h3>
+          <p class="step-description">
+            After signing up you can view your uploaded documents and also can upload another new document as your need.
+          </p>
+        </div>
+        </div>
+       
+
+        <!-- STEP 03 -->
+        <div class="step-container">
+        <div class="step-text-box">
+          <p class="step-number">03</p>
+          <h3 class="step-title">Category</h3>
+          <p class="step-description">
+            You can upload your medical documents in various categories form starting from test reports, medical bills and prescriptions etc.
+          </p>
+        </div>
+        <div class="step-img-box">
+          <img src="./static/images/upload.jpg"   class="step-img" />
+        </div>
+      </div>
+    </div>
+    </section>
+ 
+    <section class="solution container">
+        <h1 class="solution-title">How curassist is making health data management better?</h1>
+        <div class="solution-container">
+        <div class="sol">
+
+       
+        <ul>
+            <li>
+                
+                <ion-icon name="document-text-outline" class="solution-img"></ion-icon>
+                <h4 class="solution-heading"> hassle free life</h4>
+                <p class="solution-text">Curassist is a software that will store all the medical history in one place of a  patient,  apart from this it provides the facility to give specific access to data to doctors, pharmacies, and pathologists.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="sol">
+
+       
+        <ul>
+            <li>
+                <ion-icon name="scan-circle-outline" class="solution-img"></ion-icon>
+                
+                <h4 class="solution-heading">dectection of diseases</h4>
+                <p class="solution-text">Severe diseases are detected at the earliest.  As the patient uploads the test report “curassist” will predict the future diseases that the person might suffer from through machine learning models.
+
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="sol">
+
+       
+        <ul>
+            <li>
+                <ion-icon name="layers-outline" class="solution-img"></ion-icon>
+                <h4 class="solution-heading"> Secure Your Data</h4>
+                <p class="solution-text">No compromise with the confidentiality of the medical data of a patient from now as “curassist” will provide end-to-end protection to the stored data of patients using blockchain technology.
+
+                </p>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </section>
+    <div class="container">
+    <section class="callToAction">
+        <div class="cta-text-box">
+            <h3 class="cta-title">Make Your Life hassle-free!</h3>
+            <p class="cta-text">How many stack of document do you want to pile up? Live Free and Secure your data. </p>
+            <form action="" class="cta-form">
+                <div class="s1">
+                <label for="">Full Name</label>
+                <input type="text" placeholder="John Smith"/>
+            </div>
+            <div class="s1">
+                <label for="">Email Address</label>
+                <input type="text" placeholder="me@gmail.com"/>
+            </div>
+            <div class="s1">
+                
+                <select name="" id="">
+                    <label for=""> where did you hear fromus?</label>
+                    <option value="">Please Choose One Option</option>
+                    <option value="">Friends And Family</option>
+                    <option value="">Facebook</option>
+                    <option value="">Twitter</option>
+                    <option value="">Instagram</option>
+
+                   
+                </select>
+            </div>
+            <div class="s1">
+                <button>Sign Up Now</button>
+            </div>
+            </form>
+        </div>
+    
+            <img src="./static/images/img1.jpg" class="cta-img" alt="">
+       
+    </section>
+</div>
+<section class="about-us container">
+    <div class="about-us-text">
+        <h1 class="about-us-title">About Us</h1>
+        <p class="about-us-texts">We are group of engineering students (Rajdeep Goswami,  Chandan Prasad, Samrat Ghosh, Ayush Agarwal, Rohan Hati,Ayesha Firdaus) trying to develop and explore new ways of recording medical data to make your life better. Our purpose is to make your life hassel free. When it comes to a thing as sensitive as medical data we are most cautious and proactive as we can be .Join us in our journey to revolutionaize the health care system of the country . </p>
+    </div>
+    <div class="about-us-gallery">
+            <img src="./static/images/rajdeep.jpeg"class="about-img" alt="">
+            <img src="./static/images/chandan.jpeg" class="about-img"alt="">
+            <img src="./static/images/ayush.jpeg"class="about-img" alt="">
+            <img src="./static/images/rohan.jpeg" class="about-img"alt="">
+            <img src="./static/images/samrat.jpeg" class="about-img"alt="">
+            <img src="./static/images/ayesha-firdaus.jpeg" class="about-img"alt="">
+
+    </div>
+</section>
+ 
+    <footer class="footer">
+        <div class="foot">
+            <img src="./static/images/new-logo.png" class="foot-img" alt="">
+           <div class="foot-logos">
+            <ion-icon name="logo-facebook" class="foot-logo"></ion-icon>
+            <ion-icon name="logo-instagram" class="foot-logo"></ion-icon>
+            <ion-icon name="logo-twitter" class="foot-logo"></ion-icon>
+        </div>            
+        <p class="foot-sec-1">Copyright © 2027 by Curassist, Inc. All rights reserved.</p>
+
+        </div>
+        <div class="foot">
+            <h4 class="foot-heading">Contact Us</h4>
+            <p class="foot-sec-1">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p class="foot-sec-1">91 9330 639435</p>
+            <p class="foot-sec-1">hello@curassist.com</p>
+        </div>
+        <div class="foot">
+            <h4 class="foot-heading">Account</h4>
+            <p class="foot-2">Create Account</p>
+            <p class="foot-2">Sign</p>
+         
+        </div>
+        <div class="foot">
+             <h4 class="foot-heading">Company</h4>
+             <p class="foot-2">About Curassist</p>
+             <p class="foot-2">For Business</p>
+             <p class="foot-2">Partners</p>
+             <p class="foot-2">Career</p>
+        </div>
+        <div class="foot">
+             <h4 class="foot-heading">Resources</h4>
+             <p class="foot-2">Help Centre</p>
+             <p class="foot-2">Privacy & terms</p>
+        </div>
+
+    </footer>
+</body>
+</html>

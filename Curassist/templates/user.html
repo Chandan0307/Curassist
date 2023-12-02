@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+      <div class="container-fluid">
+        {% comment %} <div class="navbar-header">
+          <!-- <a class="navbar-brand" href="#">Curassist</a> -->
+          <div class="logo-image">
+            <img src="image" class="img-fluid" />
+          </div>
+        </div> {% endcomment %}
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-brand" href="{% url 'home' %}">Curassist</a></li> 
+          <!-- <li class="active"><a href="#">Home</a></li> -->
+          {% comment %} <li><a href="{% url 'upl'%}">Upload</a></li>
+          <li><a href="{% url 'index'%}">Logout</a></li>
+          <!-- <li><a href="#">Page 3</a></li> --> {% endcomment %}
+          {% comment %} <li><a href="#">{{request.user.username}}</a></li> {% endcomment %}
+          
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container"></div>
+
+    <div class="global-container">
+        <div class="card login-form">
+        <div class="card-body">
+            <h1 class="card-title text-left" style="color:#0b5ed7">Profile :</h1>
+            <h4 class="card-title text-left" style="color:#000000">1. Name : {{request.user.username}} </h4>
+            <h4 class="card-title text-left" style="color:#000000">2. Email ID : {{request.user.email}} </h4>
+              {% comment %} <p>User {{request.user.username}} </p> {% endcomment %}
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

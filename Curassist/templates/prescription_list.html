@@ -1,0 +1,51 @@
+
+{% extends 'base2.html' %}
+
+{% block content %}
+
+  {% block content_header %}
+    <h2>Prescriptions</h2>
+    <p>
+      <a href="{% url 'upload_prescription' %}" class="btn btn-primary">Upload Prescription</a>
+    </p>
+  {% endblock %}
+
+  <table class="table mb-0">
+    <thead>
+      <tr>
+        <th>Prescription</th>
+        <th>Doctor's Name</th>
+        <th>Date</th>
+        <th>Open</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for doc in docs %}
+        <tr>
+          <td>
+            {% if doc.File %}
+              <img src="{{ doc.File.url }}" alt="{{ doc.DoctorName }}" style="width:100px;">
+            {% else %}
+              <span class="text-muted">No Prescription</span>
+            {% endif %}
+          </td>
+          <td>{{ doc.DoctorName }}</td>
+          <td>{{ doc.Date }}</td>
+          <td>
+            <a href="{{ doc.File.url }}" class="btn btn-primary btn-sm" target="_blank">
+              Open File
+            </a>
+          </td>
+          <td>
+            <form method="post" action="{% url 'delete_prescription' doc.pk %}">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+            </form> 
+            
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
